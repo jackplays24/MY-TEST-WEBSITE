@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NORTH//SIDE — Goods for the Everyday</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            NORTH<span>//</span>SIDE
+        </a>
+
+        <nav class="nav-links">
+            <a href="#shop">Shop</a>
+            <a href="#featured">Featured</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="themeButton" class="icon-button">
+                ◐
+            </button>
+
+            <button id="cartButton" class="cart-button">
+                BAG
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    NORTH//SIDE — 2026 COLLECTION
+                </p>
+
+                <h1>
+                    MADE FOR<br>
+                    <span>EVERYDAY.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Clothes, accessories and everyday goods
+                    designed without trying too hard.
+                </p>
+
+                <a href="#shop" class="black-button">
+                    SHOP THE COLLECTION
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1000&q=85"
+                    alt="Clothing collection"
+                >
+
+                <div class="hero-label">
+                    <span>NEW</span>
+                    <strong>01 / 06</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURED
+        ========================== -->
+
+        <section id="featured" class="featured">
+
+            <div class="section-top">
+
+                <div>
+                    <p class="eyebrow">CURRENTLY IN</p>
+                    <h2>THE EDIT</h2>
+                </div>
+
+                <p class="section-note">
+                    A few things we've been wearing lately.
+                </p>
+
+            </div>
+
+            <div class="featured-grid">
+
+                <div class="feature-card large">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&q=85"
+                        alt="Streetwear"
+                    >
+
+                    <div class="feature-overlay">
+                        <span>01</span>
+                        <strong>HEAVYWEIGHT</strong>
+                    </div>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85"
+                        alt="White t-shirt"
+                    >
+
+                    <div class="feature-overlay">
+                        <span>02</span>
+                        <strong>ESSENTIALS</strong>
+                    </div>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85"
+                        alt="Fashion"
+                    >
+
+                    <div class="feature-overlay">
+                        <span>03</span>
+                        <strong>OUTERWEAR</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SHOP
+        ========================== -->
+
+        <section id="shop" class="shop">
+
+            <div class="shop-header">
+
+                <div>
+                    <p class="eyebrow">THE STORE</p>
+                    <h2>ALL GOODS</h2>
+                </div>
+
+                <div class="search-wrapper">
+
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Search..."
+                    >
+
+                    <span>⌕</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Categories -->
+
+            <div class="categories">
+
+                <button class="category active" data-category="all">
+                    ALL
+                </button>
+
+                <button class="category" data-category="shirts">
+                    SHIRTS
+                </button>
+
+                <button class="category" data-category="outerwear">
+                    OUTERWEAR
+                </button>
+
+                <button class="category" data-category="accessories">
+                    ACCESSORIES
+                </button>
+
+                <button class="category" data-category="footwear">
+                    FOOTWEAR
+                </button>
+
+            </div>
+
+
+            <!-- Products -->
+
+            <div id="productGrid" class="product-grid">
+
+                <!-- Product 1 -->
+
+                <article
+                    class="product"
+                    data-category="shirts"
+                    data-name="Heavyweight Tee"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85"
+                            alt="Heavyweight Tee"
+                        >
+
+                        <span class="product-tag">
+                            BESTSELLER
+                        </span>
+
+                        <button
+                            class="quick-add"
+                            data-id="1"
+                        >
+                            QUICK ADD
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Heavyweight Tee</h3>
+                            <p>400 GSM / Cotton</p>
+                        </div>
+
+                        <strong>$32</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+
+                <article
+                    class="product"
+                    data-category="outerwear"
+                    data-name="Utility Jacket"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85"
+                            alt="Utility Jacket"
+                        >
+
+                        <button
+                            class="quick-add"
+                            data-id="2"
+                        >
+                            QUICK ADD
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Utility Jacket</h3>
+                            <p>Water resistant</p>
+                        </div>
+
+                        <strong>$88</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+
+                <article
+                    class="product"
+                    data-category="shirts"
+                    data-name="Box Logo Long Sleeve"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=900&q=85"
+                            alt="Black long sleeve"
+                        >
+
+                        <button
+                            class="quick-add"
+                            data-id="3"
+                        >
+                            QUICK ADD
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Box Logo Long Sleeve</h3>
+                            <p>240 GSM / Cotton</p>
+                        </div>
+
+                        <strong>$46</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+
+                <article
+                    class="product"
+                    data-category="footwear"
+                    data-name="Daily Runner"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+                            alt="Red sneakers"
+                        >
+
+                        <button
+                            class="quick-add"
+                            data-id="4"
+                        >
+                            QUICK ADD
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Daily Runner</h3>
+                            <p>Everyday sneaker</p>
+                        </div>
+
+                        <strong>$74</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 5 -->
+
+                <article
+                    class="product"
+                    data-category="accessories"
+                    data-name="Canvas Cap"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=85"
+                            alt="Canvas cap"
+                        >
+
+                        <button
+                            class="quick-add"
+                            data-id="5"
+                        >
+                            QUICK ADD
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Canvas Cap</h3>
+                            <p>Adjustable / Cotton</p>
+                        </div>
+
+                        <strong>$24</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 6 -->
+
+                <article
+                    class="product"
+                    data-category="accessories"
+                    data-name="Everyday Tote"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85"
+                            alt="Canvas tote bag"
+                        >
+
+                        <button
+                            class="quick-add"
+                            data-id="6"
+                        >
+                            QUICK ADD
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Everyday Tote</h3>
+                            <p>Heavy canvas</p>
+                        </div>
+
+                        <strong>$28</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 7 -->
+
+                <article
+                    class="product"
+                    data-category="outerwear"
+                    data-name="Core Hoodie"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85"
+                            alt="Grey hoodie"
+                        >
+
+                        <button
+                            class="quick-add"
+                            data-id="7"
+                        >
+                            QUICK ADD
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Core Hoodie</h3>
+                            <p>450 GSM / Fleece</p>
+                        </div>
+
+                        <strong>$64</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 8 -->
+
+                <article
+                    class="product"
+                    data-category="shirts"
+                    data-name="Washed Tee"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=85"
+                            alt="Fashion shirt"
+                        >
+
+                        <button
+                            class="quick-add"
+                            data-id="8"
+                        >
+                            QUICK ADD
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+                            <h3>Washed Tee</h3>
+                            <p>Vintage wash</p>
+                        </div>
+
+                        <strong>$36</strong>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div id="noResults" class="no-results">
+                NOTHING FOUND.
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section id="about" class="about-section">
+
+            <div>
+
+                <p class="eyebrow">
+                    NORTH//SIDE
+                </p>
+
+                <h2>
+                    NO BIG<br>
+                    <span>DEAL.</span>
+                </h2>
+
+            </div>
+
+            <div class="about-copy">
+
+                <p>
+                    We make things we'd actually use.
+                    Simple materials, straightforward fits,
+                    no twelve-page manifesto attached.
+                </p>
+
+                <p>
+                    Everything here is a fictional product
+                    for this demo store. The checkout is also
+                    a browser-only demonstration.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         CART DRAWER
+    ========================== -->
+
+    <div id="cartOverlay" class="cart-overlay"></div>
+
+    <aside id="cartDrawer" class="cart-drawer">
+
+        <div class="cart-header">
+
+            <div>
+                <p class="eyebrow">YOUR BAG</p>
+                <h2 id="cartTitle">0 ITEMS</h2>
+            </div>
+
+            <button id="closeCart" class="close-button">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="cartItems" class="cart-items">
+
+            <div class="empty-cart">
+
+                <div>○</div>
+
+                <p>
+                    Your bag is empty.
+                </p>
+
+                <button id="startShopping">
+                    KEEP SHOPPING
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-bottom">
+
+            <div class="cart-line">
+                <span>SUBTOTAL</span>
+                <strong id="cartSubtotal">$0.00</strong>
+            </div>
+
+            <p class="shipping-note">
+                Shipping calculated at checkout.
+            </p>
+
+            <button id="checkoutButton" class="checkout-button">
+                CHECKOUT →
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div id="toast" class="toast">
+        Added to bag.
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            NORTH<span>//</span>SIDE
+        </div>
+
+        <div>
+            © 2026 NORTH//SIDE
+        </div>
+
+        <div>
+            DEMO STORE
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
